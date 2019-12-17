@@ -99,39 +99,20 @@ var onBtnClickModalClose = function onBtnClickModalClose(evt) {
     modalClose();
 };
 
+var onLinkModalHandler = function onLinkModalHandler(elem) {
+    elem.addEventListener('click', function (evt) {
+        evt.preventDefault();
+        var btnModalClose = document.querySelector('.modal__btn-close');
+        body.classList.add('modal-opened');
+        btnModalClose.addEventListener('click', onBtnClickModalClose);
+        document.addEventListener('keydown', onEscModalClose);
+        document.addEventListener('click', onClickDocumentModalClose);
+    });
+};
+
 var onLinkModalShow = function onLinkModalShow(items) {
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-
-        for (var _iterator = items[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            var item = _step.value;
-
-
-            item.addEventListener('click', function (evt) {
-                evt.preventDefault();
-                var btnModalClose = document.querySelector('.modal__btn-close');
-                body.classList.add('modal-opened');
-                btnModalClose.addEventListener('click', onBtnClickModalClose);
-                document.addEventListener('keydown', onEscModalClose);
-                document.addEventListener('click', onClickDocumentModalClose);
-            });
-        }
-    } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-    } finally {
-        try {
-            if (!_iteratorNormalCompletion && _iterator.return) {
-                _iterator.return();
-            }
-        } finally {
-            if (_didIteratorError) {
-                throw _iteratorError;
-            }
-        }
+    for (var i = 0; i < items.length; i++) {
+        onLinkModalHandler(items[i]);
     }
 };
 

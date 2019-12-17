@@ -11,18 +11,20 @@ const onBtnClickModalClose = function (evt)  {
     modalClose()
 }
 
+const onLinkModalHandler = function (elem) {
+    elem.addEventListener(`click`, function (evt) {
+        evt.preventDefault()
+        let btnModalClose = document.querySelector(`.modal__btn-close`);
+        body.classList.add(`modal-opened`)
+        btnModalClose.addEventListener(`click`, onBtnClickModalClose)
+        document.addEventListener(`keydown`, onEscModalClose)
+        document.addEventListener(`click`, onClickDocumentModalClose)
+    })
+}
+
 const onLinkModalShow = function (items) {
-
-    for( let item of items) {
-
-        item.addEventListener(`click`, function (evt) {
-            evt.preventDefault()
-            let btnModalClose = document.querySelector(`.modal__btn-close`);
-            body.classList.add(`modal-opened`)
-            btnModalClose.addEventListener(`click`, onBtnClickModalClose)
-            document.addEventListener(`keydown`, onEscModalClose)
-            document.addEventListener(`click`, onClickDocumentModalClose)
-        })
+    for(let i = 0; i < items.length; i++) {
+        onLinkModalHandler(items[i])
     }
 }
 
