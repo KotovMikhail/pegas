@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'normalize.css/normalize.css';
+@import "functions";
+@import 'mixins';
+@import 'fonts';
+@import 'png_sprite';
+
+//@import 'slick-carousel/slick/slick.css';
+
+@import 'base';
+@import 'overrides';
+@import 'animations';
+
+@import 'blocks/btn';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/logo';
+@import 'blocks/info';
+@import 'blocks/support';
+@import 'blocks/tabs';
+@import 'blocks/data';
+@import 'blocks/modal';
+@import 'blocks/applicant';
+@import 'blocks/phone';
+@import 'blocks/social';
+@import 'blocks/footer';

@@ -1,0 +1,37 @@
+.support {
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;    background-color: $color-main-bg;
+    
+    
+    @include breakpoint($tablet-width) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    
+    @include breakpoint($mobile-width) {
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+    }
+    
+    &__tabs {
+        margin-bottom: 3.2rem;
+        
+        @include breakpoint($tablet-width) {
+            margin-bottom: 1.6rem;
+        }
+    }
+    
+    &__tabs-wrapper {
+        
+        @include breakpoint($mobile-width-sm) {
+            overflow-x: scroll;
+        }
+    }
+    
+    &__tabs-items {
+        @include breakpoint($mobile-width-sm) {
+            min-width: 40rem;
+            padding-bottom: 1.2rem;
+        }
+    }
+}

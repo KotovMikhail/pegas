@@ -1,0 +1,76 @@
+.applicant {
+    
+    &__list {
+        @include list-reset
+    }
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+        width: 100%;
+        border-top: 1px solid $color-lightgray;
+        background-color: $color-white;
+        
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    
+    &__link {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__content {
+        padding-right: 1.6rem;
+    }
+    
+    &__name {
+        margin-top: 0;
+        margin-bottom: 0.4rem;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    &__details-wrapper {
+        display: flex;
+    }
+    
+    &__details {
+        display: flex;
+        margin-left: 2.5rem;
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: $color-dovegray;
+        
+        &:first-child {
+            margin-left: 0;
+        }
+   
+        @include breakpoint($mobile-width) {
+            
+            &--ticket-number {
+                display: none;
+            }
+        }
+    }
+    
+    &__data-info {
+        margin-left: 0.5rem;
+    }
+    
+    &__btn {
+        padding: 0.6rem 1.6rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        color: $color-blue;
+        text-decoration: none;
+    }
+    
+}

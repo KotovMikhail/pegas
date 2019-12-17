@@ -1,0 +1,233 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    min-width: $min-width;
+    margin: 0;
+    padding: 0;
+
+    font-family: $rubik-regular;
+    color: $color-black;
+    background-color: $color-white;
+}
+
+body {
+    line-height: 1.5;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+label {
+    cursor: pointer;
+    user-select: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+ul {
+    @include list-reset;
+}
+
+@include placeholder {
+    text-overflow: ellipsis;
+}
+
+input[placeholder] {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:focus::-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    iframe,
+    object,
+    embed {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: $container-width;
+
+    @include breakpoint($tablet-width) {
+        padding-left: 5.6rem;
+        padding-right: 5.6rem;
+    }
+
+    @include breakpoint($mobile-width) {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: $rubik-regular;
+    font-size: 1.6rem;
+    min-height: 100vh;
+}
+
+.site-content {
+    position: relative;
+    flex: 1 0 auto;
+}
+
+.bg-cover {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.menu-opened {
+    overflow: hidden;
+    
+    .site-header__overlay {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: $color-black-08;
+    }
+    
+    .nav__wrapper {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 8.1rem;
+        background-color: transparent;
+        overflow-y: scroll;
+        z-index: 5;
+    }
+    
+    .nav__list {
+        background-color: $color-white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav__item {
+        width: 100%;
+        margin: 0;
+        padding: 1.6rem;
+        border-bottom: 1px solid $color-border;
+        
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    
+    .nav__link {
+        
+        .icon {
+            top: 0.4rem;
+            transform: none;
+        }
+    }
+    
+    .btn--burger {
+        span {
+            opacity: 0;
+        }
+    
+        &::before {
+            width: 3rem;
+            right: -0.2rem;
+            left: auto;
+            top: 1rem;
+            transform: rotate(45deg);
+            transition: all .2s linear;
+        }
+    
+        &::after {
+            width: 3rem;
+            right: -0.2rem;
+            left: auto;
+            top: 1rem;
+            transform: rotate(-45deg);
+            transition: all .2s linear;
+        }
+    }
+}
+
+.modal-opened {
+    overflow: hidden;
+    
+    .modal__wrapper {
+        display: block;
+    }
+    
+    .modal {
+        animation: bounce 0.6s;
+    }
+}

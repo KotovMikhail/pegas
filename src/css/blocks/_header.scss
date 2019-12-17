@@ -1,0 +1,24 @@
+.site-header {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid $color-border;
+    background-color: $color-white;
+
+    .container {
+        max-width: 100%;
+        padding-right: 3.2rem;
+        padding-left: 3.2rem;
+    
+        @include breakpoint($tablet-width) {
+            padding-right: 1.6rem;
+            padding-left: 1.6rem;
+        }
+    }
+    
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

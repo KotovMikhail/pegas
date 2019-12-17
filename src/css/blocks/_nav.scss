@@ -1,0 +1,68 @@
+.nav {
+    
+    &__wrapper {
+        @include breakpoint($mobile-width) {
+            display: none;
+        }
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__item {
+        margin-left: 3.2rem;
+        
+        &:first-child {
+            margin-left: 0;
+        }
+        
+        @include breakpoint($tablet-width) {
+            margin-left: 2.4rem;
+        }
+    }
+    
+    &__link {
+        position: relative;
+        padding-left: 2.4rem;
+        display: block;
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        text-decoration: none;
+        color: $color-black;
+        
+        .icon {
+            width: 1.6rem;
+            height: 1.6rem;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    
+    
+    &__text {
+        display: block;
+        
+        &--long {
+            display: block;
+        }
+        
+        &--short {
+            display: none;
+        }
+        
+        @include breakpoint($tablet-width) {
+            &--long {
+                display: none;
+            }
+            
+            &--short {
+                display: block;
+            }
+        }
+    }
+}

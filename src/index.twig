@@ -1,0 +1,125 @@
+{% extends 'templates/base.twig' %}
+
+{% block title %}Test{% endblock %}
+
+{% block page %}
+    <section class="info">
+        <div class="container">
+            <div class="info__wrapper">
+                <h1 class="info__title">Центр поддержки пассажиров Nordwind Airlines</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="support">
+        <div class="container">
+            <div class="support__wrapper">
+                <h2 class="support__title visually-hidden">Вопросы и срочные вопросы</h2>
+
+                <div class="tabs support__tabs js-tabs">
+                    <div class="tabs__items-wrapper support__tabs-wrapper">
+                        <div class="tabs__items support__tabs-items">
+                            <button class="btn btn--white support__tabs-item tabs__item js-tabs-item" type="button" data-content-id="1">Все вопросы
+                            </button>
+                            <button class="btn btn--white support__tabs-item tabs__item tabs__item--active js-tabs-item" type="button"
+                                    data-content-id="2">Срочные вопросы
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="support__content tabs__content js-tabs-content"
+                         data-content-id="1">
+                        <p class="tabs__text">
+                            Если до вылета осталось более 12 часов, мы обязательно рассмотрим ваш запрос.
+                        </p>
+                    </div>
+
+                    <div class="support__content tabs__content tabs__content--active js-tabs-content"
+                         data-content-id="2">
+                        <p class="tabs__text">
+                            Если до вылета осталось меньше 12 часов, мы рассмотрим ваш запрос быстрее. В остальных случаях — согласно <a
+                                class="tabs__rule-link" href="#" target="_blank" title="Правила">правилам</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="data">
+                    <ul class="data__list">
+                        <li class="data__item">
+                            <a class="data__link" href="#"><span class="data__text">Изменить данные пассажира в билете</span>
+                                <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-edit"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="data__item">
+                            <a class="data__link" href="#"><span class="data__text">Обменять или вернуть билет</span>
+                                <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-exchange"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="data__item">
+                            <a class="data__link" href="#"><span class="data__text">Сообщить о невозможности перелета</span>
+                                <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-stop"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="data__item">
+                            <a class="data__link" href="#"><span class="data__text">Управление билетом при отмене рейса</span>
+                                <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-ticket"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="data__item">
+                            <a class="data__link" href="#"><span class="data__text">Объединить багаж с попутчиком</span>
+                                <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-baggage"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="data__item">
+                            <a class="data__link" href="#"><span class="data__text">Проблемы с регистрацией в аэропорту</span>
+                                <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-error"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="data__item">
+                            <a class="data__link" href="#"><span class="data__text">Обслуживание в аэропорту</span>
+                                <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-exclamation"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+{% endblock %}

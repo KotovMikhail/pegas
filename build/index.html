@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Test</title>
+    <link rel="preload" href="./assets/fonts/Rubik/Rubik.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#737a7c">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <!-- HEADER -->
+        <header class="site-header" id="start">
+            <div class="container">
+                <div class="site-header__wrapper">
+                    <div class="logo">
+                        <a class="logo__link" href="#" target="_blank">
+                            <img src="./assets/img/logo/logo-nordwind.svg" width="108" height="48" alt="Nordwind">
+                        </a>
+                    </div>
+
+                    <div class="nav__wrapper">
+                        <nav class="nav site-header__nav js-nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">
+                                        <span class="nav__text nav__text--long">Правила и сроки рассмотрения обращений</span>
+                                        <span class="nav__text nav__text--short">Правила рассмотрения обращений</span>
+
+                                        <svg class="icon" width="16" height="16">
+                                            <use xlink:href="#icon-folder"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#"><span class="nav__text">Назад на nordwindairlines.ru</span>
+                                        <svg class="icon" width="16" height="16">
+                                            <use xlink:href="#icon-exit"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="site-header__overlay"></div>
+                    </div>
+
+                    <button class="btn btn--burger js-btn-burger"><span></span></button>
+                </div>
+            </div>
+        </header>
+        <!-- /HEADER -->
+
+        <!-- CONTENT -->
+        <main class="site-content">
+
+            <section class="info">
+                <div class="container">
+                    <div class="info__wrapper">
+                        <h1 class="info__title">Центр поддержки пассажиров Nordwind Airlines</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="support">
+                <div class="container">
+                    <div class="support__wrapper">
+                        <h2 class="support__title visually-hidden">Вопросы и срочные вопросы</h2>
+
+                        <div class="tabs support__tabs js-tabs">
+                            <div class="tabs__items-wrapper support__tabs-wrapper">
+                                <div class="tabs__items support__tabs-items">
+                                    <button class="btn btn--white support__tabs-item tabs__item js-tabs-item" type="button" data-content-id="1">Все вопросы
+                                    </button>
+                                    <button class="btn btn--white support__tabs-item tabs__item tabs__item--active js-tabs-item" type="button" data-content-id="2">Срочные вопросы
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="support__content tabs__content js-tabs-content" data-content-id="1">
+                                <p class="tabs__text">
+                                    Если до вылета осталось более 12 часов, мы обязательно рассмотрим ваш запрос.
+                                </p>
+                            </div>
+
+                            <div class="support__content tabs__content tabs__content--active js-tabs-content" data-content-id="2">
+                                <p class="tabs__text">
+                                    Если до вылета осталось меньше 12 часов, мы рассмотрим ваш запрос быстрее. В остальных случаях — согласно <a class="tabs__rule-link" href="#" target="_blank" title="Правила">правилам</a>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="data">
+                            <ul class="data__list">
+                                <li class="data__item">
+                                    <a class="data__link" href="#"><span class="data__text">Изменить данные пассажира в билете</span>
+                                        <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-edit"></use>
+                                    </svg>
+                                </span>
+                                    </a>
+                                </li>
+
+                                <li class="data__item">
+                                    <a class="data__link" href="#"><span class="data__text">Обменять или вернуть билет</span>
+                                        <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-exchange"></use>
+                                    </svg>
+                                </span>
+                                    </a>
+                                </li>
+
+                                <li class="data__item">
+                                    <a class="data__link" href="#"><span class="data__text">Сообщить о невозможности перелета</span>
+                                        <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-stop"></use>
+                                    </svg>
+                                </span>
+                                    </a>
+                                </li>
+
+                                <li class="data__item">
+                                    <a class="data__link" href="#"><span class="data__text">Управление билетом при отмене рейса</span>
+                                        <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-ticket"></use>
+                                    </svg>
+                                </span>
+                                    </a>
+                                </li>
+
+                                <li class="data__item">
+                                    <a class="data__link" href="#"><span class="data__text">Объединить багаж с попутчиком</span>
+                                        <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-baggage"></use>
+                                    </svg>
+                                </span>
+                                    </a>
+                                </li>
+
+                                <li class="data__item">
+                                    <a class="data__link" href="#"><span class="data__text">Проблемы с регистрацией в аэропорту</span>
+                                        <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-error"></use>
+                                    </svg>
+                                </span>
+                                    </a>
+                                </li>
+
+                                <li class="data__item">
+                                    <a class="data__link" href="#"><span class="data__text">Обслуживание в аэропорту</span>
+                                        <span class="data__icon-box">
+                                      <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#icon-exclamation"></use>
+                                    </svg>
+                                </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </main>
+        <!-- /CONTENT -->
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="site-footer__top-wrapper">
+                <div class="container">
+                    <div class="site-footer__top">
+
+                        <ul class="phone site-footer__phones">
+                            <li class="phone__item">
+                                <p class="phone__heading">Для Москвы</p>
+                                <a class="phone__number" href="tel:874957305080" title="+7 495 730 50 80">+7 495 730 50 80</a>
+                            </li>
+
+                            <li class="phone__item">
+                                <p class="phone__heading">Звонок по России бесплатный </p>
+                                <a class="phone__number" href="tel:88002224844" title="8 800 222 48 44">8 800 222 48 44</a>
+                            </li>
+                        </ul>
+
+                        <div class="social site-footer__social">
+                            <ul class="social__list">
+                                <li class="social__item">
+                                    <a class="btn--circle social__link social__link--fb" href="#" target="_blank" title="Facebook">
+                                        <svg class="icon" width="12" height="23">
+                                            <use xlink:href="#icon-fb"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="social__item">
+                                    <a class="btn--circle social__link social__link--vk" href="#" target="_blank" title="Vkontakte">
+                                        <svg class="icon" width="23" height="14">
+                                            <use xlink:href="#icon-vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="social__item">
+                                    <a class="btn--circle social__link social__link--tw" href="#" target="_blank" title="Twitter">
+                                        <svg class="icon" width="23" height="19">
+                                            <use xlink:href="#icon-tw"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="social__item">
+                                    <a class="btn--circle social__link social__link--inst" href="#" target="_blank" title="Instagramm">
+                                        <svg class="icon" width="23" height="23">
+                                            <use xlink:href="#icon-inst"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="site-footer__bottom">
+                    <div class="site-footer__text">
+                        <p class="site-footer__copy">© 2017 Северный ветер. Все пpава защищены.</p>
+                        <p class="site-footer__offer">Пользуясь сайтом support.nordwindairlines.ru, Вы автоматически принимаете <a class="site-footer__link-offer" href="#" target="_blank" title="Правила">правила</a> передачи и
+                            обработки персональных данных.</p>
+                    </div>
+
+                    <div class="logo site-footer__logo">
+                        <a class="logo__link" href="#" target="_blank">
+                            <img src="./assets/img/logo/logo-iata.svg" width="124" height="20" alt="Nordwind">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- /FOOTER -->
+    </div>
+    <!-- MODALS -->
+
+    <div class="modal__wrapper">
+        <div class="modal">
+            <h2 class="modal__title">Выбрать заявителя из бронирования</h2>
+
+            <div class="applicant">
+                <ul class="applicant__list">
+                    <li class="applicant__item">
+                        <div class="applicant__content">
+                            <p class="applicant__name">Константинопольский Константин Константинович</p>
+                            <div class="applicant__details-wrapper">
+                                <div class="applicant__details applicant__details--birthday">
+                                    <span class="applicant__text">Дата рождения:</span>
+                                    <span class="applicant__data-info applicant__data-info--birthday">23.12.1992</span>
+                                </div>
+
+                                <div class="applicant__details applicant__details--ticket-number">
+                                    <span class="applicant__text">Билет №:</span>
+                                    <span class="applicant__data-info applicant__data-info--ticket-number">33 323 32323</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn--white applicant__btn" href="#">Выбрать</a>
+                    </li>
+
+                    <li class="applicant__item">
+                        <div class="applicant__content">
+                            <p class="applicant__name">Петров Петр Петрович</p>
+                            <div class="applicant__details-wrapper">
+                                <div class="applicant__details applicant__details--birthday">
+                                    <span class="applicant__text">Дата рождения:</span>
+                                    <span class="applicant__data-info applicant__data-info--birthday">23.12.1992</span>
+                                </div>
+
+                                <div class="applicant__details applicant__details--ticket-number">
+                                    <span class="applicant__text">Билет №:</span>
+                                    <span class="applicant__data-info applicant__data-info--ticket-number">33 323 32323</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn--white applicant__btn" href="#">Выбрать</a>
+                    </li>
+
+                    <li class="applicant__item">
+                        <div class="applicant__content">
+                            <p class="applicant__name">Иванова Анна Ивановн</p>
+                            <div class="applicant__details-wrapper">
+                                <div class="applicant__details applicant__details--birthday">
+                                    <span class="applicant__text">Дата рождения:</span>
+                                    <span class="applicant__data-info applicant__data-info--birthday">23.12.1992</span>
+                                </div>
+
+                                <div class="applicant__details applicant__details--ticket-number">
+                                    <span class="applicant__text">Билет №:</span>
+                                    <span class="applicant__data-info applicant__data-info--ticket-number">33 323 32323</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn--white applicant__btn" href="#">Выбрать</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="btn btn--circle modal__btn-close">
+                <svg class="icon" width="24" height="24">
+                    <use xlink:href="#icon-cross"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- /MODALS -->
+    <script src="./assets/js/vendor.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <div style="display: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <symbol viewbox="0 0 16 16" id="icon-baggage" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M1 6h8v3H7v5H1V6z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7 1v5" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2 1h6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3 1v5" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 9h8v6H7z" />
+                <path d="M9 7h4v1H9z" />
+                <path d="M3 14v1" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol viewbox="0 0 24 24" id="icon-cross" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 23L23 1" stroke="#1468CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M23 23L1 1" stroke="#1468CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol viewbox="0 0 16 16" id="icon-edit" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 1L8 8" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6 10l-1 1" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9 1H1v14h14V7" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol viewbox="0 0 16 16" id="icon-error" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 8A7 7 0 111 8a7 7 0 0114 0z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <rect x="7" y="4" width="2" height="5" rx="1" />
+                <path d="M8 12a1 1 0 100-2 1 1 0 000 2z" />
+            </symbol>
+            <symbol viewbox="0 0 16 16" id="icon-exchange" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5h7" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 1l3 4-3 4" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8 11H1" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 7l-3 4 3 4" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol viewbox="0 0 16 16" id="icon-exclamation" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7" y="3" width="2" height="5" rx="1" />
+                <path d="M8 11a1 1 0 100-2 1 1 0 000 2z" />
+            </symbol>
+            <symbol viewbox="0 0 16 16" id="icon-exit" xmlns="http://www.w3.org/2000/svg">
+                <g opacity=".3">
+                    <path clip-rule="evenodd" d="M2 0a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2v-4H7a2 2 0 110-4h3V2a2 2 0 00-2-2H2z" />
+                    <path d="M7 8h8" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 4l3 4-3 4" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+            </symbol>
+            <symbol viewbox="0 0 12 23" id="icon-fb" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0" mask-type="alpha" maskunits="userSpaceOnUse" x="0" y="0" width="12" height="23">
+                    <path clip-rule="evenodd" d="M.942.521h10.075v21.554H.942V.521z" />
+                </mask>
+                <g mask="url(#mask0)">
+                    <path clip-rule="evenodd" d="M3.168 16.664c0-1.687-.006-3.374.006-5.062.003-.284-.078-.373-.362-.361-.527.021-1.054-.002-1.58.01-.214.005-.293-.054-.29-.28.01-1.053.01-2.106 0-3.159-.001-.202.06-.269.265-.265.538.013 1.078-.015 1.616.012.311.015.376-.095.37-.384A53.075 53.075 0 013.19 4.77c.022-.979.284-1.893.868-2.688C4.797 1.074 5.846.613 7.057.559 8.3.504 9.547.535 10.792.521c.174-.002.225.06.225.229-.006 1.065-.007 2.13 0 3.195.002.19-.06.247-.246.244-.599-.01-1.197-.005-1.796-.003-.797.002-1.274.412-1.324 1.2-.04.633-.01 1.268-.025 1.902-.006.226.129.21.278.21.91 0 1.82.01 2.73-.006.267-.005.355.057.325.338a141.421 141.421 0 00-.304 3.178c-.02.24-.13.285-.345.282a99.215 99.215 0 00-2.155-.003c-.516.003-.466-.076-.466.45-.002 3.303-.007 6.606.008 9.908.001.35-.088.436-.433.43a97.091 97.091 0 00-3.7 0c-.348.007-.405-.11-.402-.42.013-1.664.006-3.327.006-4.99z" />
+                </g>
+            </symbol>
+            <symbol viewbox="0 0 16 24" id="icon-fire" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M6 0s6.667 3.49 6.667 6.4-.534 5.236.533 5.236c1.067 0 1.067-1.745 1.067-1.745S16 12.364 16 15.273s-2.644 4.58-2.8 5.09c-.156.512 1.6-.581 1.6-.581s-1.6 3.49-6.933 3.49C2.533 23.273 0 18.91 0 18.91s1.467 1.455 1.467.291C1.467 18.036 0 17.6 0 15.273c0-2.328 1.467-5.964 1.467-5.964s0 4.073 1.066 3.491c1.067-.582 0-2.91.534-4.655C3.6 6.4 5.2 5.236 5.2 5.236s1.067 1.746 1.6-.581C7.333 2.327 6 0 6 0z" />
+                <path opacity=".867" d="M7.32 23.273c-4.667-.152-5.987-8.364-5.987-8.364s4 4.254 3.334.608C4 11.87 8.4 10.047 8.4 8.83 8.4 7.616 6.8 6.4 6.8 6.4S10 8.223 10 10.047c0 1.823 0 6.078 1.067 4.862 1.066-1.216.533-2.431.533-2.431s2.133 1.215 1.6 3.039c-.533 1.823-3.2 3.646-2.667 4.254.534.608 1.6 0 1.6 0s-.146 3.654-4.813 3.502z" />
+                <path opacity=".517" d="M10.667 16.727s0 1.455-.667 2.182c-.667.727.667 4.364-2.667 4.364-3.333 0-2.666-4.364-2.666-4.364s.666 1.455 1.333.727c.667-.727-.423-2.67 0-4.363.423-1.694 2-3.637 2-3.637s0 4.364.667 5.819c.666 1.454 2-.728 2-.728z" />
+                <defs>
+                    <lineargradient id="paint0_linear" x1="0" y1="0" x2="0" y2="23.273" gradientunits="userSpaceOnUse">
+                        <stop stop-color="#FFAC25" />
+                        <stop offset="1" stop-color="#EC0D02" />
+                    </lineargradient>
+                    <lineargradient id="paint1_linear" x1="1.333" y1="6.4" x2="1.333" y2="23.279" gradientunits="userSpaceOnUse">
+                        <stop stop-color="#FFA247" />
+                        <stop offset="1" stop-color="#FFA900" />
+                    </lineargradient>
+                    <radialgradient id="paint2_radial" cx="0" cy="0" r="1" gradientunits="userSpaceOnUse" gradienttransform="matrix(.22602 5.74991 -3.03194 .11918 7.476 19.777)">
+                        <stop stop-color="#FEFEDF" />
+                        <stop offset="1" stop-color="#FFD44C" />
+                    </radialgradient>
+                </defs>
+            </symbol>
+            <symbol viewbox="0 0 16 16" id="icon-folder" xmlns="http://www.w3.org/2000/svg">
+                <g opacity=".3">
+                    <path d="M5 15H2.5A1.5 1.5 0 011 13.5v0A1.5 1.5 0 012.5 12H12" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13 15v0a2 2 0 002-2V1" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7 13v3l2-1.5 2 1.5v-3H7z" />
+                    <path clip-rule="evenodd" d="M12 12V1H3a2 2 0 00-2 2v10-1h11z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+            </symbol>
+            <symbol viewbox="0 0 23 23" id="icon-inst" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M6.89.586C5.74.64 4.953.822 4.265 1.09a5.302 5.302 0 00-1.917 1.248 5.294 5.294 0 00-1.249 1.915C.83 4.941.648 5.727.595 6.878.542 8.032.53 8.4.53 11.338c0 2.938.012 3.306.065 4.46.052 1.151.235 1.937.503 2.625a5.29 5.29 0 001.249 1.916 5.306 5.306 0 001.917 1.248c.688.268 1.475.45 2.627.503 1.155.052 1.523.065 4.462.065 2.94 0 3.309-.013 4.463-.065 1.152-.053 1.939-.235 2.628-.503a5.31 5.31 0 001.917-1.248 5.302 5.302 0 001.248-1.916c.267-.688.45-1.474.503-2.625.053-1.154.065-1.522.065-4.46 0-2.938-.012-3.306-.065-4.46-.052-1.151-.235-1.937-.503-2.626a5.306 5.306 0 00-1.248-1.915 5.306 5.306 0 00-1.917-1.248c-.689-.267-1.476-.45-2.628-.503-1.154-.052-1.523-.065-4.463-.065-2.94 0-3.307.013-4.462.065zm.09 19.556c-1.055-.047-1.629-.223-2.01-.372a3.355 3.355 0 01-1.244-.809 3.35 3.35 0 01-.81-1.243c-.148-.381-.325-.954-.373-2.01-.052-1.14-.063-1.482-.063-4.37s.011-3.23.063-4.371c.048-1.055.225-1.627.373-2.009.196-.505.43-.865.81-1.243a3.35 3.35 0 011.244-.81c.381-.147.955-.324 2.01-.372 1.141-.052 1.484-.063 4.373-.063 2.89 0 3.233.011 4.374.063 1.055.048 1.629.225 2.01.373.505.196.866.43 1.245.809.378.378.613.739.81 1.243.147.382.324.954.372 2.009.052 1.14.063 1.483.063 4.371 0 2.888-.01 3.23-.063 4.37-.048 1.056-.225 1.629-.373 2.01a3.35 3.35 0 01-.81 1.243c-.378.379-.739.613-1.244.81-.381.148-.955.324-2.01.371-1.14.053-1.483.064-4.374.064-2.89 0-3.232-.011-4.373-.064zm8.852-14.578a1.299 1.299 0 102.598-.001 1.299 1.299 0 00-2.598 0zM5.795 11.338a5.556 5.556 0 005.558 5.554 5.556 5.556 0 005.559-5.554 5.556 5.556 0 00-5.559-5.555 5.556 5.556 0 00-5.558 5.555zm1.95 0a3.607 3.607 0 013.608-3.606 3.607 3.607 0 11-3.607 3.606z" />
+            </symbol>
+            <symbol viewbox="0 0 108 48" id="icon-logo" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M7.174 47.842L1.268 39.19v8.652H0V37.225h1.557l5.907 8.7v-8.7H8.73v10.617H7.174zm3.42-3.962c0-2.219 1.395-4.12 4.204-4.12 2.81 0 4.206 1.901 4.206 4.12 0 2.219-1.397 4.12-4.206 4.12s-4.205-1.901-4.205-4.12zm1.251 0c0 1.696.995 3.122 2.953 3.122 1.958 0 2.954-1.426 2.954-3.122 0-1.648-.995-3.122-2.954-3.122-1.958 0-2.953 1.474-2.953 3.122zm10.224-2.884c.016 0 .016.016.032.016 1.091-.714 2.135-1.253 3.483-1.253v1.142c-.931 0-2.312.411-3.515 1.14v5.8h-1.204v-7.923h1.204v1.078zm10.866 5.293V41.28a6.563 6.563 0 00-2.391-.46c-1.622 0-2.986 1.094-2.986 3.107 0 2.044 1.364 3.074 3.017 3.074.738 0 1.461-.19 2.36-.713zm1.203-9.065v10.618h-1.203v-.634l-.033-.016c-.834.602-1.733.808-2.584.808-2.632 0-3.996-1.854-3.996-4.072 0-2.33 1.445-4.169 4.06-4.169.852 0 1.718.191 2.52.492l.033-.016v-3.01h1.203zm5.907 10.681h-1.573l-3.017-7.987h1.364l2.44 6.83 2.407-6.83h1.364l2.456 6.83 2.391-6.83h1.364l-2.968 7.987h-1.574l-2.375-6.196-2.28 6.196zm10.512-.063h1.204v-7.924h-1.204v7.924zm4.591-6.862l.032.016c1.172-.713 2.23-1.237 3.579-1.237 2.038 0 2.84 1.11 2.84 2.901v5.182h-1.202v-5.087c0-1.379-.675-1.934-2.04-1.934-.946 0-2.005.492-3.209 1.205v5.816h-1.204v-7.924h1.204v1.062zm14.926 5.309V41.28a6.562 6.562 0 00-2.391-.46c-1.621 0-2.985 1.094-2.985 3.107 0 2.044 1.364 3.074 3.017 3.074.738 0 1.461-.19 2.36-.713zm1.204-9.065v10.618h-1.204v-.634l-.032-.016c-.834.602-1.733.808-2.584.808-2.632 0-3.996-1.854-3.996-4.072 0-2.33 1.445-4.169 4.06-4.169.852 0 1.718.191 2.52.492l.032-.016v-3.01h1.204zM50.56 38.752h1.204v-1.526H50.56v1.526zm39.408 4.04h.859v-.848h-.86v.848zm-8.337 0h.859v-.848h-.86v.848zm-3.16-.848l2.258 5.899h-.992l-.548-1.512h-2.487l-.558 1.512h-.991l2.265-5.9h1.053zm-.513 1.014l-.982 2.63h1.956l-.974-2.63zm3.673 4.885h.859v-4.37h-.86v4.37zm3.16-3.784c.008 0 .008.009.017.009.558-.367 1.098-.682 1.841-.682v.796c-.505 0-1.274.244-1.858.593v3.068h-.85v-4.37h.85v.586zm2.867 3.784h.86v-5.9h-.86v5.9zm2.31 0h.859v-4.37h-.86v4.37zm3.168-3.784l.018.009c.576-.376 1.133-.682 1.876-.682 1.125 0 1.576.612 1.576 1.643v2.814h-.859v-2.744c0-.708-.354-.97-.99-.97-.523 0-1.072.288-1.62.646v3.068h-.86v-4.37h.86v.586zm7.219 3.18c.549 0 1.061-.095 1.69-.34l.15.664c-.433.201-1.185.367-1.964.367-1.664 0-2.443-1.049-2.443-2.272 0-1.547 1.106-2.272 2.416-2.272 1.691 0 2.372.83 1.841 2.456H98.69c.027.76.682 1.398 1.665 1.398zm-1.612-2.079h2.532c.203-.62-.098-1.084-1.053-1.084-.655 0-1.363.341-1.479 1.084zm6.311 2.77c-.469 0-1.212-.07-1.726-.227l.08-.69c.495.149 1.097.227 1.558.227.681 0 1.221-.105 1.23-.55.009-.402-.416-.577-1.133-.717-1.372-.263-1.708-.77-1.708-1.311 0-.953.867-1.276 1.885-1.276.469 0 1.195.06 1.691.218l-.089.69a5.634 5.634 0 00-1.495-.218c-.664 0-1.045.131-1.045.48 0 .29.133.482 1.212.7 1.408.289 1.629.891 1.629 1.337 0 1.031-.876 1.337-2.089 1.337z" />
+                <mask id="mask0" mask-type="alpha" maskunits="userSpaceOnUse" x="0" y="0" width="108" height="31">
+                    <path clip-rule="evenodd" d="M0 .182h107.085v30.03H0V.181z" />
+                </mask>
+                <g mask="url(#mask0)">
+                    <path clip-rule="evenodd" d="M51.907 30.211L36.02 1.915 20.132 30.211H0l11.241-20.02C14.345 4.663 21.22.181 26.596.181h28.581l15.888 28.296L86.953.181h20.132l-11.241 20.02c-3.104 5.528-9.98 10.01-15.356 10.01h-28.58z" />
+                </g>
+            </symbol>
+            <symbol viewbox="0 0 99 16" id="icon-logo-iata" xmlns="http://www.w3.org/2000/svg">
+                <path opacity=".15" clip-rule="evenodd" d="M20.538 12.26a8.217 8.217 0 001.879-2.341c-.627-.195-1.253-.358-1.88-.358v2.7zm-.462-.032c-.758-.585-1.45-1.431-1.912-2.31a5.528 5.528 0 011.912-.357v2.667zM20.538.26a7.656 7.656 0 011.879 2.31c-.627.227-1.253.357-1.88.357V.26zm-.462 0c-.758.586-1.45 1.431-1.912 2.31.627.194 1.253.357 1.912.357V.26zm.462 8.846V6.472h2.802c0 1.04-.264 2.08-.726 3.024-.626-.228-1.384-.39-2.076-.39zm6.098-2.634h-2.835a8.347 8.347 0 01-.725 3.22c.593.26 1.154.617 1.681 1.04 1.121-1.139 1.813-2.667 1.88-4.26zm-2.241 4.552a6.13 6.13 0 00-1.55-.943 8.064 8.064 0 01-1.912 2.407c1.286-.163 2.473-.618 3.462-1.463zm-4.32-1.918V6.472h-2.834c.033 1.04.264 2.113.725 3.024.66-.228 1.385-.39 2.11-.39zm-6.13-2.634h2.834c.034 1.138.297 2.146.759 3.22a7.08 7.08 0 00-1.715 1.04c-1.12-1.139-1.813-2.634-1.879-4.26zm2.241 4.552c.462-.357.99-.747 1.55-.943a8.065 8.065 0 001.912 2.407c-1.286-.163-2.473-.618-3.462-1.463zm4.352-7.642v2.634h2.802c0-1.073-.264-2.081-.726-3.057-.659.26-1.384.39-2.076.423zm6.098 2.634h-2.835c-.033-1.138-.296-2.179-.725-3.22a7.563 7.563 0 001.681-1.04c1.187 1.203 1.813 2.667 1.88 4.26zm-2.241-4.585c-.462.39-.99.748-1.55.976-.494-.943-1.12-1.692-1.912-2.407a6.422 6.422 0 013.462 1.43zm-4.32 1.951v2.634h-2.834a7.7 7.7 0 01.725-3.057c.66.26 1.385.39 2.11.423zm-6.13 2.634h2.834c.034-1.17.297-2.179.759-3.22a7.08 7.08 0 01-1.715-1.04 6.285 6.285 0 00-1.879 4.26zm2.241-4.585c.462.39.99.748 1.55.976.461-.943 1.153-1.724 1.912-2.407a6.423 6.423 0 00-3.462 1.43zM0 8.325h12.659c.461 2.31 2.077 4.228 5.307 5.561-.362 1.106-1.615 2.114-2.9 2.114h-6.89c-1.055 0-1.88-.878-2.21-1.594h6.99c.428-.065.428-.39.033-.455h-6.89c-.89 0-1.682-.748-2.143-1.56h7.978c.428-.066.428-.39 0-.456H3.89c-.824 0-1.55-.943-1.846-1.561h8.835c.428-.065.428-.455 0-.488h-9c-.725 0-1.385-.748-1.879-1.56zm40.58 0H27.923c-.462 2.31-2.077 4.228-5.308 5.561C22.977 14.992 24.23 16 25.517 16h6.89c1.054 0 1.878-.878 2.208-1.594h-6.989c-.428-.065-.428-.39-.033-.455h6.89c.89 0 1.681-.748 2.143-1.56h-7.978c-.428-.066-.428-.39 0-.456h8.044c.824 0 1.55-.943 1.846-1.561h-8.835c-.429-.065-.429-.455 0-.488h9c.725 0 1.384-.748 1.879-1.56zM82.654 16L90.538.063h5.192L99 16h-4.936l-.193-1.897H88.68L87.845 16h-5.192zm7.308-5.186h3.333l-.833-5.881-2.5 5.881zM72.33 16l1.86-11.953h-4.617L70.344 0h14.104l-.77 4.047h-4.36L77.525 16H72.33zm-21.155 0L59.125.063h5.193L67.523 16h-4.808l-.32-1.897h-5.129L56.432 16h-5.256zm7.372-5.186h3.334l-.898-5.881-2.436 5.881zM42.714 16L45.919.063h5.257L47.97 16h-5.256z" />
+            </symbol>
+            <symbol viewbox="0 0 16 16" id="icon-stop" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 8A7 7 0 111 8a7 7 0 0114 0z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 4l-8 8" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol viewbox="0 0 16 16" id="icon-ticket" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" d="M1 9l2 2h1.029a1 1 0 011 1v1L7 15l8-8-2-1.974h-1a1 1 0 01-1-1V3L9 1 1 9z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 6l6 6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol viewbox="0 0 23 19" id="icon-tw" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0" mask-type="alpha" maskunits="userSpaceOnUse" x="0" y="0" width="23" height="19">
+                    <path clip-rule="evenodd" d="M.53.873h21.618v17.558H.53V.873z" />
+                </mask>
+                <g mask="url(#mask0)">
+                    <path clip-rule="evenodd" d="M7.328 18.431c8.158 0 12.62-6.754 12.62-12.611 0-.192-.004-.383-.013-.573a9.025 9.025 0 002.213-2.295c-.795.353-1.65.59-2.547.698a4.448 4.448 0 001.95-2.452 8.892 8.892 0 01-2.816 1.076 4.432 4.432 0 00-3.238-1.4 4.435 4.435 0 00-4.32 5.442 12.594 12.594 0 01-9.143-4.631 4.428 4.428 0 001.373 5.917A4.404 4.404 0 011.4 7.048l-.001.056a4.435 4.435 0 003.558 4.346 4.45 4.45 0 01-2.003.076 4.44 4.44 0 004.143 3.079 8.905 8.905 0 01-5.508 1.897c-.358 0-.711-.02-1.058-.062a12.562 12.562 0 006.798 1.991z" />
+                </g>
+            </symbol>
+            <symbol viewbox="0 0 23 14" id="icon-vk" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0" mask-type="alpha" maskunits="userSpaceOnUse" x="0" y="0" width="23" height="14">
+                    <path clip-rule="evenodd" d="M.53.93h21.64v12.34H.53V.93z" />
+                </mask>
+                <g mask="url(#mask0)">
+                    <path clip-rule="evenodd" d="M11.12 13.224h1.293s.394-.042.587-.26c.185-.201.176-.57.176-.57s-.025-1.736.78-1.987c.798-.252 1.813 1.677 2.895 2.415.814.561 1.435.436 1.435.436l2.895-.042s1.51-.092.797-1.283c-.059-.1-.42-.88-2.148-2.482-1.812-1.686-1.569-1.409.613-4.319 1.325-1.769 1.862-2.85 1.694-3.312-.159-.444-1.132-.327-1.132-.327l-3.256.017s-.243-.034-.42.076c-.175.1-.285.352-.285.352s-.511 1.367-1.2 2.532c-1.451 2.457-2.03 2.591-2.265 2.44-.554-.352-.411-1.434-.411-2.197 0-2.381.36-3.379-.705-3.63-.352-.084-.612-.143-1.518-.152-1.158-.008-2.148 0-2.702.277-.37.185-.655.587-.478.612.218.025.704.134.956.487.336.452.319 1.475.319 1.475s.193 2.81-.445 3.153c-.436.243-1.04-.251-2.332-2.482-.663-1.14-1.158-2.406-1.158-2.406s-.093-.235-.269-.36c-.21-.152-.503-.202-.503-.202l-3.096.017s-.462.016-.638.218c-.151.176-.008.553-.008.553s2.424 5.66 5.16 8.52c2.517 2.607 5.37 2.431 5.37 2.431z" />
+                </g>
+            </symbol>
+        </svg> </div>
+
+
+
+</body>
+
+</html>
